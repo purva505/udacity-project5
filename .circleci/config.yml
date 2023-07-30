@@ -84,7 +84,7 @@ jobs:
             docker build --tag=capfinal .
             sleep 30s
             docker images ls
-            docker login -u="$DOCKER_USER" -p="$DOCKER_PASSWORD"
+            docker login -u="$DOCKER_USER" -p="$DOCKER_PASSWORD" docker.io
             docker tag capfinal purva505/capfinal:v1
             docker push purva505/capfinal:v1
   eks-cluster-creation:
