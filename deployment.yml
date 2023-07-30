@@ -22,7 +22,7 @@ spec:
          app: capfinal
     spec:
       containers:
-        - image: anjulsi/capfinal:v1
+        - image: purva505/capfinal:v1
           imagePullPolicy: Always
           name: myimage
           ports:
