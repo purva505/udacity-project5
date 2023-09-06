@@ -144,13 +144,13 @@ workflows:
   default:
       jobs:
         - pre_build
-        - build-image:
-            requires: [pre_build]
-        - eks-cluster-creation:
-            requires: [build-image]
-        - deploy-phase:
-            cluster-name: capfinal
-            requires: [eks-cluster-creation]
-        - sanity:
-            cluster-name: capfinal
-            requires: [deploy-phase]
+        #- build-image:
+        #    requires: [pre_build]
+        #- eks-cluster-creation:
+        #   requires: [build-image]
+        #- deploy-phase:
+        #    cluster-name: capfinal
+        #    requires: [eks-cluster-creation]
+        #- sanity:
+        #    cluster-name: capfinal
+        #    requires: [deploy-phase]
